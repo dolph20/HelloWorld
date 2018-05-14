@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'TestModel',               # 添加
 ]
 
 MIDDLEWARE = [
@@ -78,11 +79,11 @@ DATABASES = {
     'default': {
        # 'ENGINE': 'django.db.backends.sqlite3',
        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'ENGINE': '',#'mysql.connector.django',  # 或者使用 mysql.connector.django
-        'NAME': 'test',
+        'ENGINE': 'django.db.backends.mysql',#'django.db.backends.XXX',  # 或者使用mysql.connector.django
+        'NAME': 'xiaopu',
         'USER': 'ljxp',
-        'PASSWORD': '******',
-        'HOST':'localhost',
+        'PASSWORD': 'xiaopudb@)!^',
+        'HOST':'123.234.19.79',
         'PORT':'3306',
     }
 }

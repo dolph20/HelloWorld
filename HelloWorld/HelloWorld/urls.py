@@ -21,8 +21,12 @@ urlpatterns = [
 ]
 """
 from django.conf.urls import url
-from . import view
+from . import view,testdb,testselectdb,testupdatedb,testdeletedb
 urlpatterns = [
-url(r'^hello$', view.hello),
+    url(r'^hello$', view.hello),
+    url(r'^testdb$', testdb.testdb),
+    url(r'^testselectdb$', testselectdb.testdb),
+    url(r'^testupdatedb$', testupdatedb.testdb),
+    url(r'^testdeletedb$', testdeletedb.testdb),
 ]
 
