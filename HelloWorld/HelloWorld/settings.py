@@ -82,7 +82,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',#'django.db.backends.XXX',  # 或者使用mysql.connector.django
         'NAME': 'xiaopu',
         'USER': 'ljxp',
-        'PASSWORD': 'xiaopudb@)!^',
+        'PASSWORD': '********',
         'HOST':'123.234.19.79',
         'PORT':'3306',
     }
