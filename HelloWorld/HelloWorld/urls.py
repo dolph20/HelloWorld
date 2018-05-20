@@ -21,12 +21,15 @@ urlpatterns = [
 ]
 """
 from django.conf.urls import url
-from . import view,testdb,testselectdb,testupdatedb,testdeletedb
+from . import view,testdb,testselectdb,testupdatedb,testdeletedb,search,search2
 urlpatterns = [
     url(r'^hello$', view.hello),
     url(r'^testdb$', testdb.testdb),
     url(r'^testselectdb$', testselectdb.testdb),
     url(r'^testupdatedb$', testupdatedb.testdb),
     url(r'^testdeletedb$', testdeletedb.testdb),
+    url(r'^search-form$', search.search_form),
+    url(r'^search$', search.search),
+    url(r'^search-post$', search2.search_post),
 ]
 
